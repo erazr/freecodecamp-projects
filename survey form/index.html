@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header>
+          <h1 id="title">Survey Form</h1>
+          <p id="description">
+            Thank you for taking the time to help us improve the platform
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="field">
+            <label id="name-label" for="name"> Name </label>
+            <input
+              placeholder="Enter your name"
+              id="name"
+              type="text"
+              required
+            />
+          </div>
+          <div class="field">
+            <label id="email-label" for="email"> Email </label>
+            <input
+              placeholder="Enter your email"
+              id="email"
+              type="email"
+              required
+            />
+          </div>
+          <div class="field">
+            <label id="number-label" for="number"> Age(optional) </label>
+            <input
+              placeholder="Age"
+              id="number"
+              type="number"
+              min="13"
+              max="120"
+            />
+          </div>
+          <div class="field">
+            <label for="dropdown">What is your OS?</label>
+            <select id="dropdown">
+              <option value="">Select</option>
+              <option value="MacOS">MacOS</option>
+              <option value="Windows">Windows</option>
+              <option value="Linux">Linux</option>
+            </select>
+          </div>
+          <div>
+            <p>Which programming language do you know most</p>
+            <input type="radio" id="c#" name="prog-lang" value="c#" />
+            <label for="c#">C#</label>
+
+            <input type="radio" id="c++" name="prog-lang" value="c++" />
+            <label for="c++">C++</label>
+
+            <input
+              type="radio"
+              id="javascript"
+              name="prog-lang"
+              value="javascript"
+            />
+            <label for="javascript">Javascript</label>
+
+            <input type="radio" id="python" name="prog-lang" value="python" />
+            <label for="python">Python</label>
+          </div>
+          <div class="field" style="margin-top: 0">
+            <p>What browser do you use?</p>
+            <label>
+              <input type="checkbox" value="Google Chrome" /> Google Chrome
+            </label>
+            <label>
+              <input type="checkbox" value="Mozilla Firefox" /> Mozilla Firefox
+            </label>
+            <label> <input type="checkbox" value="Yandex" /> Yandex </label>
+          </div>
+          <div class="field">
+            <label>
+              <textarea placeholder="Enter your Bio here"> </textarea>
+            </label>
+          </div>
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
